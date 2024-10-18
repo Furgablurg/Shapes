@@ -14,6 +14,12 @@ public class ShapeCollection {
 
     public double getTotalArea() {
         // TODO: Skriv klart den här funktionen.
-        return 0.0;
+        double totalArea = 0.0;
+        // Iterera över alla former och lägg till deras area till totalArea
+        for (Shape2D shape : shapes) {
+            totalArea += shape.getArea();
+        }
+        
+        return totalArea;
     }
 }
